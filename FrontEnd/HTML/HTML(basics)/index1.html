@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- instructing the browser it's a html document -->
+<!-- HTML is a markup Languge stanads for HyperText Markup Languge -->
+<html lang="en">
+  <!--Language is specified as english-->
+  <head>
+    <!-- <head> tag is used to instruct meta data i.e data about the document data-->
+    <meta charset="UTF-8" />
+    <!-- The character set we are using -->
+    <!--UTF-8 extends the ASCII character set to use 8-bit code points, which allows for up to 256 different characters.This means that UTF-8 can represent all of the printable ASCII characters, as well as the non-printable characters-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!---This was for the previous versions of Internet explorer...which version of Internet explorer we are using-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--viewport is the visible are of webpage....To scale down the webpage to differet devices this was a quick fix-->
+    <title>Begining of HTML</title>
+    <!--The title of the document that will be displayed-->
+  </head>
+  <body>
+    <!--From here the body of document starts-->
+    <!-- There are Elements and attributes -->
+    <!-- Example <html> tag is an element and lang is an attribute in line 2 -->
+    <!--There are two types of elements in html.....Block elements and inline elements-->
+    <!--Block elements always starts from new line and browser adds margin automatically to it e.g <div> <p> <h1>-<h6>-->
+    <!-- Inline elements take only as much width as necessary...e.g <span> -->
+    <h1 style="font-weight: bold; text-align: center"><u>HTML</u></h1>
+    <!-- u is undrline tag, css is emmeded here...called Inline css-->
+    <p>
+      A markup languge is one that tells how to format the overall view of a
+      page e.g HTML,SGML,XML
+    </p>
+    <p>
+      Hypertext is text which contains links to other texts. The term was coined
+      by Ted Nelson around 1965
+    </p>
+    <p>HTML is generally used to create the skelton for webpage</p>
+    <!-- HTML: Heading,paragraph,Images -->
+    <!--Let's see if we can host an Image on our Localhost using Python and put it into our html-->
+    <img
+      src="http://127.0.0.1:8080/FrontEnd/HTML/HTML%28basics%29/Dp.jpg"
+      alt="No image found"
+      height="200"
+    />
+    <!--Above code will only work when we have hosted the image on our localhost....Also notice the name of directory is HTML(basic) but we used %28 and %29 beacuse url doesn't have these characters e.g space bar is %20 which is ASCII value of space-->
+    <!--Now let's see if we can hook our browser tab to index.js file...so that we can control it from localhost now and any ip later-->
+    <!--This is what the browser exploitation framework(BEEF) uses...which is used by a lot of hackers-->
+    <p id="hook"></p>
+  </body>
+  <script src="http://127.0.0.1:8080/FrontEnd/HTML/HTML%28basics%29/index.js"></script>
+  <!--We can change the ip address and it will be linked to the file hosted at that...we can try that with ngrok-->
+</html>
